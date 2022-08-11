@@ -1,0 +1,9 @@
+{% extends "main.html" %}
+{% block content %}
+
+<h1>Room {{room.name}}</h1>
+<p><a href="{% url 'update-room' room.id %}">Edit</a></p>
+<p><a href="{% url 'delete-room' room.id %}">delete</a></p>
+
+
+{% endblock content %}

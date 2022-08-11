@@ -1,0 +1,11 @@
+{% extends "main.html" %}
+{% block content %}
+
+<h1>Photo List</h1>
+{% for photo in photos %}
+<p><img src="{{ photo.avatar.url }}" alt="" srcset="" width="100" height="100"></p>
+
+{% endfor %}
+
+
+{% endblock content %}

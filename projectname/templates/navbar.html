@@ -1,0 +1,12 @@
+<p><a href="/">Home</a></p>
+<p><a href="{% url 'create-room' %}">Create new room</a></p>
+{% if request.user.is_authenticated %}
+  <p>{{request.user.username}}</p>
+  <p><a href="{% url 'logout-user' %}">Logout</a></p>
+  <p><a href="{% url 'upload-photo' %}">upload photo</a></p>  
+  <p><a href="{% url 'photo-list' %}">photo list</a></p>  
+{% else %}
+<p><a href="{% url 'login-user' %}">Login</a></p>  
+<p><a href="{% url 'register-user' %}">register</a></p>  
+{% endif %}
+<hr/>

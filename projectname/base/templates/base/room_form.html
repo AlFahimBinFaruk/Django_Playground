@@ -1,0 +1,21 @@
+{% extends "main.html" %} {% block content %}
+
+<h1>room form</h1>
+
+<div>
+  <form action="" method="post">
+    {% csrf_token %}
+    <!-- {{form.as_p}} -->
+    <div class="form-outline mb-4">
+        <label for="">Room name:</label>
+      <div>{{form.name}}</div>
+    </div>
+    <div class="form-outline mb-4">
+       <label for="">Description:</label>
+        <div >{{form.description}}</div>
+      </div>
+    <input type="submit" value="Submit" />
+  </form>
+</div>
+
+{% endblock content %}
