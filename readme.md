@@ -40,3 +40,10 @@ python manage.py runserver
 
 
 
+### Topics of this project
+* CRUD
+* MVT
+* Authentication
+* File Upload locally
+* Restrict page
+* Flash messages in MVT
